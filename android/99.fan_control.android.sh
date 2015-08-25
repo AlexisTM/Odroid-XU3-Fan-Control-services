@@ -1,6 +1,6 @@
-#!/bin/sh
-# Shell script to control the fan on Archlinux Odroid XU-3
-# Compare every temperatures
+#!/system/bin/sh
+# fan-control daemon
+# description : Shell script to control the fan on Android Odroid XU-3 at boot
 TMU_PATH="/sys/bus/platform/drivers/exynos-tmu/10060000.tmu/temp"
 # Path of the Duty file used to set the throttle from 60 to 255
 FAN_PATH="/sys/bus/platform/drivers/odroid-fan/odroid_fan.15/pwm_duty"
